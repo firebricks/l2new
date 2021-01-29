@@ -1,0 +1,251 @@
+[
+  {
+    "id": "5fd36f2894186940ecce7eeb",
+    "name": "eternal.ms",
+    "chronicles": "Interlude",
+    "openDate": "2020-12-25",
+    "uri": "https://eternal.ms/",
+    "premium": 2,
+    "features": ["PvP"],
+    "rates": [
+      { "type": "XP", "amount": 1200 },
+      { "type": "SP", "amount": 1200 },
+      { "type": "Adena", "amount": 1 }
+    ]
+  },
+  {
+    "id": "5fd36f2894186940ecce7eec",
+    "name": "aden.land",
+    "chronicles": "Classic",
+    "openDate": "2020-12-11",
+    "uri": "https://aden.land",
+    "premium": 2,
+    "features": ["Lowrate"],
+    "rates": [
+      { "type": "XP", "amount": 10 },
+      { "type": "SP", "amount": 10 },
+      { "type": "Drop", "amount": 2 },
+      { "type": "Adena", "amount": 10 },
+      { "type": "Spoil", "amount": 2 }
+    ]
+  },
+  {
+    "id": "5fd36f2994186940ecce7eed",
+    "name": "genesis.ms",
+    "chronicles": "Interlude",
+    "openDate": "2020-12-18",
+    "uri": "https://genesis.ms",
+    "premium": 2,
+    "features": ["Multicraft"],
+    "rates": [
+      { "type": "XP", "amount": 100 },
+      { "type": "SP", "amount": 100 },
+      { "type": "Drop", "amount": 200 },
+      { "type": "Adena", "amount": 1 },
+      { "type": "Spoil", "amount": 200 }
+    ]
+  },
+  {
+    "id": "5fd36f2994186940ecce7eee",
+    "name": "rampage.pw",
+    "chronicles": "Interlude",
+    "openDate": "2020-12-25",
+    "uri": "https://rampage.pw",
+    "premium": 2,
+    "features": ["Multicraft"],
+    "rates": [
+      { "type": "XP", "amount": 100 },
+      { "type": "SP", "amount": 100 },
+      { "type": "Drop", "amount": 200 },
+      { "type": "Adena", "amount": 1 },
+      { "type": "Spoil", "amount": 200 }
+    ]
+  },
+  {
+    "id": "5fd36f2994186940ecce7eef",
+    "name": "l2europa.com/ru/",
+    "chronicles": "Classic",
+    "openDate": "2021-01-03",
+    "uri": "https://l2europa.com/ru/",
+    "premium": 2,
+    "features": ["Lowrate"],
+    "rates": [
+      { "type": "XP", "amount": 7 },
+      { "type": "SP", "amount": 7 },
+      { "type": "Drop", "amount": 2 },
+      { "type": "Adena", "amount": 10 },
+      { "type": "Spoil", "amount": 3 }
+    ]
+  },
+  {
+    "id": "5fd36f2994186940ecce7ef0",
+    "name": "e-global",
+    "chronicles": "Interlude+",
+    "openDate": "2020-11-20",
+    "uri": "https://e-global",
+    "premium": 2,
+    "features": ["Masterwork"],
+    "rates": [
+      { "type": "XP", "amount": 1 },
+      { "type": "SP", "amount": 1 },
+      { "type": "Drop", "amount": 1 },
+      { "type": "Adena", "amount": 1 },
+      { "type": "Spoil", "amount": 1 }
+    ]
+  },
+  {
+    "id": "5fd36f2994186940ecce7ef1",
+    "name": "rpg-club.com",
+    "chronicles": "High Five",
+    "openDate": "2020-11-16",
+    "uri": "https://rpg-club.com",
+    "premium": 2,
+    "features": ["Lowrate"],
+    "rates": [
+      { "type": "XP", "amount": 1 },
+      { "type": "SP", "amount": 1 },
+      { "type": "Drop", "amount": 1 },
+      { "type": "Adena", "amount": 1 },
+      { "type": "Spoil", "amount": 1 }
+    ]
+  },
+  {
+    "id": "5fd36f2994186940ecce7ef2",
+    "name": "euro-pvp.com",
+    "chronicles": "Interlude",
+    "openDate": "2021-01-8",
+    "uri": "https://euro-pvp.com",
+    "premium": 2,
+    "features": ["PvP"],
+    "rates": [
+      { "type": "XP", "amount": 1200 },
+      { "type": "SP", "amount": 1200 }
+    ]
+  },
+  {
+    "id": "5fd36f2994186940ecce7ef3",
+    "name": "beyond",
+    "chronicles": "Classic",
+    "openDate": "2020-10-16",
+    "uri": "https://beyond",
+    "premium": 2,
+    "features": ["pts", "Lowrate"],
+    "rates": [
+      { "type": "XP", "amount": 5 },
+      { "type": "SP", "amount": 5 },
+      { "type": "Drop", "amount": 3 },
+      { "type": "Adena", "amount": 5 },
+      { "type": "Spoil", "amount": 3 }
+    ]
+  },
+  {
+    "id": "5fd36f2994186940ecce7ef4",
+    "name": "valhalla",
+    "chronicles": "Interlude+",
+    "openDate": "2020-08-28",
+    "uri": "https://valhalla",
+    "premium": 2,
+    "features": ["Remastered"],
+    "rates": [{ "type": "XP", "amount": 3 }]
+  },
+  {
+    "id": "5fd36f2994186940ecce7ef5",
+    "name": "SHOCK-WORLD",
+    "chronicles": "Interlude+",
+    "openDate": "2020-12-05",
+    "uri": "https://SHOCK-WORLD",
+    "premium": 2,
+    "features": ["pts", "Lowrate"],
+    "rates": [
+      { "type": "XP", "amount": 3 },
+      { "type": "SP", "amount": 3 },
+      { "type": "Drop", "amount": 3 },
+      { "type": "Adena", "amount": 3 },
+      { "type": "Spoil", "amount": 3 }
+    ]
+  },
+  {
+    "id": "5fd36f2994186940ecce7ef6",
+    "name": "gamecoast.net",
+    "chronicles": "Classic",
+    "openDate": "2019-12-20",
+    "uri": "https://gamecoast.net",
+    "premium": 2,
+    "features": ["Lowrate"],
+    "rates": [
+      { "type": "XP", "amount": 5 },
+      { "type": "SP", "amount": 5 },
+      { "type": "Drop", "amount": 3 },
+      { "type": "Adena", "amount": 3 },
+      { "type": "Spoil", "amount": 3 }
+    ]
+  },
+  {
+    "id": "5fd36f2a94186940ecce7ef7",
+    "name": "scryde.ru",
+    "chronicles": "High Five",
+    "openDate": "2018-11-26",
+    "uri": "https://scryde.ru",
+    "premium": 2,
+    "features": [""],
+    "rates": [
+      { "type": "XP", "amount": 50 },
+      { "type": "SP", "amount": 50 },
+      { "type": "Drop", "amount": 15 },
+      { "type": "Adena", "amount": 50 },
+      { "type": "Spoil", "amount": 15 }
+    ]
+  },
+  {
+    "id": "5fd36f2a94186940ecce7ef9",
+    "name": "l2realm",
+    "chronicles": "Interlude",
+    "openDate": "2020-12-05",
+    "uri": "https://l2realm",
+    "premium": 0,
+    "features": ["pts", "Lowrate"],
+    "rates": [
+      { "type": "XP", "amount": 3 },
+      { "type": "SP", "amount": 3 },
+      { "type": "Drop", "amount": 3 },
+      { "type": "Adena", "amount": 3 },
+      { "type": "Spoil", "amount": 3 }
+    ]
+  },
+  {
+    "id": "5fd36f2a94186940ecce7efa",
+    "name": "l2creed.ru",
+    "chronicles": "Interlude+",
+    "openDate": "2020-12-05",
+    "uri": "https://l2creed.ru",
+    "premium": 0,
+    "features": ["PvP"],
+    "rates": [{ "type": "XP", "amount": 50000 }]
+  },
+  {
+    "id": "5fd36f2a94186940ecce7efb",
+    "name": "interlude-online",
+    "chronicles": "Interlude",
+    "openDate": "2020-12-06",
+    "uri": "https://interlude-online",
+    "premium": 0,
+    "features": ["GVE"],
+    "rates": [{ "type": "XP", "amount": 0 }]
+  },
+  {
+    "id": "5fd36f2a94186940ecce7efc",
+    "name": "l2exe.com",
+    "chronicles": "Interlude+",
+    "openDate": "2020-12-07",
+    "uri": "https://l2exe.com",
+    "premium": 0,
+    "features": ["multiproff"],
+    "rates": [
+      { "type": "XP", "amount": 35 },
+      { "type": "SP", "amount": 20 },
+      { "type": "Drop", "amount": 100 },
+      { "type": "Adena", "amount": 35 },
+      { "type": "Spoil", "amount": 50 }
+    ]
+  }
+]
