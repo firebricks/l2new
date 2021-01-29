@@ -247,5 +247,222 @@
       { "type": "Adena", "amount": 35 },
       { "type": "Spoil", "amount": 50 }
     ]
+  },
+  {
+    "id": "5fd36f2a94186940ecce7efd",
+    "name": "thebattle.club",
+    "chronicles": "High Five",
+    "openDate": "2020-12-11",
+    "uri": "https://thebattle.club",
+    "premium": 0,
+    "features": ["Craft-PvP"],
+    "rates": [
+      { "type": "XP", "amount": 55 },
+      { "type": "SP", "amount": 55 },
+      { "type": "Drop", "amount": 20 },
+      { "type": "Adena", "amount": 40 },
+      { "type": "Spoil", "amount": 15 }
+    ]
+  },
+  {
+    "id": "5fd36f2a94186940ecce7efe",
+    "name": "lineagers.ru",
+    "chronicles": "Interlude",
+    "openDate": "2020-12-12",
+    "uri": "https://lineagers.ru",
+    "premium": 0,
+    "features": ["PvP"],
+    "rates": [
+      { "type": "XP", "amount": 1200 },
+      { "type": "SP", "amount": 1200 },
+      { "type": "Adena", "amount": 600 }
+    ]
+  },
+  {
+    "id": "5fd36f2a94186940ecce7eff",
+    "name": "ketrawars.net",
+    "chronicles": "Interlude",
+    "openDate": "2020-12-08",
+    "uri": "https://ketrawars.net",
+    "premium": 2,
+    "features": ["Craft-PvP"],
+    "rates": [
+      { "type": "XP", "amount": 100 },
+      { "type": "SP", "amount": 100 },
+      { "type": "Drop", "amount": 10 },
+      { "type": "Adena", "amount": 1 },
+      { "type": "Spoil", "amount": 10 }
+    ]
+  },
+  {
+    "id": "5fd36f2a94186940ecce7f00",
+    "name": "highfive.pw",
+    "chronicles": "High Five",
+    "openDate": "2020-12-18",
+    "uri": "https://highfive.pw",
+    "premium": 0,
+    "features": ["Multicraft"],
+    "rates": [
+      { "type": "XP", "amount": 100 },
+      { "type": "SP", "amount": 100 },
+      { "type": "Drop", "amount": 100 },
+      { "type": "Adena", "amount": 100 },
+      { "type": "Spoil", "amount": 70 }
+    ]
+  },
+  {
+    "id": "5fd36f2b94186940ecce7f01",
+    "name": "destorus.ru",
+    "chronicles": "Interlude+",
+    "openDate": "2020-12-18",
+    "uri": "https://destorus.ru",
+    "premium": 0,
+    "features": ["PvP"],
+    "rates": [{ "type": "XP", "amount": 100000 }]
+  },
+  {
+    "id": "5fd36f2b94186940ecce7f02",
+    "name": "interlude.su",
+    "chronicles": "Interlude",
+    "openDate": "2020-12-19",
+    "uri": "https://interlude.su",
+    "premium": 0,
+    "features": ["PvP"],
+    "rates": [
+      { "type": "XP", "amount": 1200 },
+      { "type": "SP", "amount": 1200 },
+      { "type": "Adena", "amount": 900 }
+    ]
+  },
+  {
+    "id": "5fd36f2b94186940ecce7f03",
+    "name": "scryde.ru",
+    "chronicles": "High Five",
+    "openDate": "2021-01-04",
+    "uri": "https://scryde.ru",
+    "premium": 0,
+    "features": [""],
+    "rates": [{ "type": "XP", "amount": 300 }]
+  },
+  {
+    "id": "5fd36f2b94186940ecce7f04",
+    "name": "genesis.ms",
+    "chronicles": "Interlude",
+    "openDate": "2020-12-15",
+    "uri": "https://genesis.ms",
+    "premium": 0,
+    "features": ["Multicraft"],
+    "rates": [
+      { "type": "XP", "amount": 100 },
+      { "type": "SP", "amount": 100 },
+      { "type": "Drop", "amount": 200 },
+      { "type": "Adena", "amount": 1 },
+      { "type": "Spoil", "amount": 200 }
+    ]
+  },
+  {
+    "id": "5fd36f2b94186940ecce7f05",
+    "name": "titanwars.world",
+    "chronicles": "Interlude",
+    "openDate": "2020-12-04",
+    "uri": "https://titanwars.world",
+    "premium": 0,
+    "features": ["Craft-PvP"],
+    "rates": [
+      { "type": "XP", "amount": 10 },
+      { "type": "SP", "amount": 10 }
+    ]
+  },
+  {
+    "id": "5fd36f2b94186940ecce7f06",
+    "name": "lineage777.com",
+    "chronicles": "Interlude",
+    "openDate": "2020-12-04",
+    "uri": "https://lineage777.com",
+    "premium": 0,
+    "features": ["PvP"],
+    "rates": [
+      { "type": "XP", "amount": 1200 },
+      { "type": "SP", "amount": 1200 },
+      { "type": "Drop", "amount": 1 },
+      { "type": "Adena", "amount": 1200 }
+    ]
+  },
+  {
+    "id": "5fd36f2b94186940ecce7f07",
+    "name": "l2mars.com",
+    "chronicles": "Classic",
+    "openDate": "2020-12-04",
+    "uri": "https://l2mars.com",
+    "premium": 0,
+    "features": [""],
+    "rates": [
+      { "type": "XP", "amount": 25 },
+      { "type": "SP", "amount": 25 },
+      { "type": "Drop", "amount": 2 },
+      { "type": "Adena", "amount": 7 },
+      { "type": "Spoil", "amount": 3 }
+    ]
+  },
+  {
+    "id": "5fd36f2b94186940ecce7f08",
+    "name": "interlude.ru",
+    "chronicles": "Interlude",
+    "openDate": "2020-12-04",
+    "uri": "https://interlude.ru",
+    "premium": 0,
+    "features": ["Craft-PvP"],
+    "rates": [
+      { "type": "XP", "amount": 50 },
+      { "type": "SP", "amount": 50 },
+      { "type": "Drop", "amount": 10 },
+      { "type": "Adena", "amount": 15 },
+      { "type": "Spoil", "amount": 10 }
+    ]
+  },
+  {
+    "id": "5fd36f2b94186940ecce7f09",
+    "name": "multiworld.ws",
+    "chronicles": "High Five",
+    "openDate": "2020-12-04",
+    "uri": "https://multiworld.ws",
+    "premium": 0,
+    "features": ["Multiproff"],
+    "rates": [
+      { "type": "XP", "amount": 3 },
+      { "type": "SP", "amount": 3 },
+      { "type": "Drop", "amount": 1 },
+      { "type": "Adena", "amount": 1 },
+      { "type": "Spoil", "amount": 3 }
+    ]
+  },
+  {
+    "id": "5fd36f2b94186940ecce7f0a",
+    "name": "l2hot.net",
+    "chronicles": "Interlude+",
+    "openDate": "2020-12-04",
+    "uri": "https://l2hot.net",
+    "premium": 0,
+    "features": ["PvP"],
+    "rates": [
+      { "type": "XP", "amount": 10000 },
+      { "type": "SP", "amount": 10000 }
+    ]
+  },
+  {
+    "id": "5fd36f2c94186940ecce7f0b",
+    "name": "messa.ms",
+    "chronicles": "High Five",
+    "openDate": "2020-12-04",
+    "uri": "https://messa.ms",
+    "premium": 0,
+    "features": [""],
+    "rates": [
+      { "type": "XP", "amount": 50 },
+      { "type": "SP", "amount": 50 },
+      { "type": "Drop", "amount": 8 },
+      { "type": "Adena", "amount": 20 },
+      { "type": "Spoil", "amount": 10 }
+    ]
   }
 ]
