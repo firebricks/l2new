@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons"
+        rel="stylesheet">
+
+    <title>Hello, world!</title>
+
+    <style>
+        header {
+            position: relative;
+            height: 200px;
+            width: 100%;
+            background-image: linear-gradient(#ff9d2f, #ff6126);
+            clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0% 100%);
+        }
+
+        footer {
+            /* position: static; */
+            height: 200px;
+            width: 100%;
+            bottom: 0;
+            background-image: linear-gradient(#ff9d2f, #ff6126);
+            clip-path: polygon(0 calc(100% - 10vw), 100% 0, 100% 100%, 0% 100%);
+        }
+
+
+        main {
+            height: 500px;
+            width: 100%;
+            margin-top: -5vw;
+            z-index: 100;
+            /* position: relative; */
+        }
+
+        body {
+            background-color: #fcfcfc;
+            font-family: 'Google Sans', sans-serif;
+        }
+
+        .list-group-new li {
+            border-top: none;
+            border-bottom: none;
+        }
+
+        .filter-row {
+            height: 100%;
+            justify-items: center;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+
+        .splitter {
+            border-left: 1px solid;
+        }
+        .navbar-brand{
+            color: white !important;
+        }
+
+        .server-row {
+            /* border: 1px solid #ff9d2f; */
+        }
+
+        .notVip {
+            font-size: 8px;
+            /* background-color: #D9AFD9;
+            background-image: linear-gradient(90deg, #8BC6EC 0%, #9599E2 100%); */
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- 0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw) -->
+    <nav class="navbar navbar-light" style="background-color: #ff9d2f; color: white;">
+        <div class="container-fluid justify-content-between" >
+            
+            <div>
+
+            </div>
+
+            <div class="">
+                <a class="navbar-brand" href="#">Home</a>
+                <a class="navbar-brand" href="#">Add Server</a>
+                <a class="navbar-brand" href="#">Discord</a>
+                <a class="navbar-brand" href="#">Events</a>
+            </div>
+
+            <div>
+                <a class="navbar-brand" href="#">Sign In</a>
+                    <a class="navbar-brand" href="#">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+
+    </header>
+
+
+    <main>
+        <section>
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col col-5">
+                        <div class="card shadow-lg rounded" style="height: 80px;">
+                            <div class="card-body">
+                                <div class="row filter-row">
+                                    <div class="col">
+                                        Rates
+                                    </div>
+                                    <div class="col splitter">
+                                        Chronicles
+                                    </div>
+                                    <div class="col splitter">
+                                        Types
+                                    </div>
+                                    <div class="col splitter">
+                                        Date
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-sm mt-5">
+                <div class="row mb-5">
+                    <!-- left col -->
+                    <div class="col me-3">
+                        <div class="row mb-5" data-masonry='{"percentPosition": true }'>
+                            <div class="col  mb-5 rounded shadow-sm me-3 server-list">
+                                <div class="row border-bottom" style="align-items: center; text-align: center;">
+                                    <div class="col col-1 rounded-top"
+                                        style="background-color: #ff9d2f; padding: 0; color: white;">
+                                        vip
+                                    </div>
+                                    <div class="col">
+                                        Open Soon
+                                    </div>
+                                </div>
+                                <div id="vip-server-list-root-soon"> </div>
+                            </div>
+
+                            <div class="col mb-5  rounded shadow-sm me-3 server-list">
+                                <div class="row border-bottom" style="align-items: center; text-align: center;">
+                                    <div class="col col-1 rounded-top">
+                                        <!-- vip -->
+                                    </div>
+                                    <div class="col">
+                                        Open Soon
+                                    </div>
+                                </div>
+                                <div class="server-list-root-soon">
+                                </div>
+                            </div>
+
+
+                            <div class="col mb-5 rounded shadow-sm me-3 server-list">
+                                <div class="row border-bottom" style="align-items: center; text-align: center;">
+                                    <div class="col col-1 rounded-top">
+                                        <!-- vip -->
+                                    </div>
+                                    <div class="col">
+                                        After week and more
+                                    </div>
+                                </div>
+                                <div class="server-list-root-soon">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- right col -->
+                    <div class="col">
+                        <div class="row  mb-5" data-masonry='{"percentPosition": true }'>
+                            <div class="col  mb-5 rounded shadow-sm me-3 server-list">
+                                <div class="row border-bottom" style="align-items: center; text-align: center;">
+                                    <div class="col col-1 rounded-top"
+                                        style="background-color: #ff9d2f; padding: 0; color: white;">
+                                        vip
+                                    </div>
+                                    <div class="col">
+                                        Already opened
+                                    </div>
+                                </div>
+
+                                <div id="vip-server-list-root-already">
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="col mb-5 rounded shadow-sm me-3 server-list">
+                                <div class="row border-bottom" style="align-items: center; text-align: center;">
+                                    <div class="col col-1 rounded-top">
+                                        <!-- vip -->
+                                    </div>
+                                    <div class="col">
+                                        Opened week ago
+                                    </div>
+                                </div>
+                                <div class="server-list-root-soon">
+                                </div>
+                            </div>
+
+
+                            <div class="col mb-5 rounded shadow-sm me-3 server-list">
+                                <div class="row border-bottom" style="align-items: center; text-align: center;">
+                                    <div class="col col-1 rounded-top">
+                                        <!-- vip -->
+                                    </div>
+                                    <div class="col">
+                                        More than week ago
+                                    </div>
+                                </div>
+                                <div class="server-list-root-soon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="text-center" style="padding-top: 10vw; color: white;">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni maxime laudantium veritatis reprehenderit aliquid maiores qui libero corporis? A odio consequatur perspiciatis porro. Hic laboriosam facere, officia maiores vitae aspernatur.</p>
+            </div>
+        </footer>
+    </main>
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script>
+
+    <!-- Include Handlebars from a CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+    <script>
+
+
+        var source = "{{#each servers}}" +
+            "<div class=\"row border-bottom\" style=\"align-items: stretch; text-align: center;\">" +
+            "{{#if isVip}}" +
+            "<div class=\"col col-1 vip-star\" style=\"background-color: #ff9d2f; padding: 0; color: white;\">" +
+            "<div style=\"display: flex; align-items: center; height: 100%; width: 100%;text-align: center; justify-content: center;\">" +
+            "                                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\"" +
+            "                                    class=\"bi bi-star\" viewBox=\"0 0 16 16\">" +
+            "                                    <path" +
+            "                                        d=\"M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z\" />" +
+            "                                </svg>" +
+            "                                </div>" +
+            "                               " +
+            "                            </div>" +
+            "{{else}}" +
+            "<div class=\"col col-1 vip-star\" style=\" padding: 0; color: white;\">" +
+            "<div style=\"display: flex; align-items: center; height: 100%; width: 100%;text-align: center; justify-content: center;\"></div></div>" +
+            "{{/if}}" +
+            "{{#if isVip}}" +
+            "                            <div class=\"col\" style=\"background-color: antiquewhite;\">" +
+            "{{else}}" +
+            "<div class=\"col\">" +
+            "{{/if}}" +
+            "                                <div class=\"row\">" +
+            "                                    <div class=\"col\">" +
+            "                                        Scryde" +
+            "                                    </div>" +
+            "                                    <div class=\"col\">" +
+            "                                        x100" +
+            "                                    </div>" +
+            "                                    <div class=\"col\">" +
+            "                                        20.02.2021" +
+            "                                    </div>" +
+            "{{#if isVip}}" +
+            "                                    <div class=\"col col-12\" style=\"font-size: 8px; background-color: antiquewhite;\">" +
+            "{{else}}" +
+            " <div class=\"col col-12 notVip\">" +
+            "{{/if}}" +
+            "                                        <div class=\"row\">" +
+            "                                            <div class=\"col\">" +
+            "                                                XP: 100" +
+            "                                            </div>" +
+            "                                            <div class=\"col\">" +
+            "                                                SP: 100" +
+            "                                            </div>" +
+            "                                            <div class=\"col\">" +
+            "                                                Drop: 100" +
+            "                                            </div>" +
+            "                                            <div class=\"col\">" +
+            "                                                Adena: 100" +
+            "                                            </div>" +
+            "                                            <div class=\"col\">" +
+            "                                                Spoil: 100" +
+            "                                            </div>" +
+            "                                        </div>" +
+            "                                    </div>" +
+            "                                </div>" +
+            "                            </div>" +
+            "                        </div>" +
+            "{{/each}}"
+        var template = Handlebars.compile(source);
+        var data = { "servers": [{ "isVip": true }, { "isVip": true }, { "isVip": true }, { "isVip": true }, { "isVip": true }, { "isVip": true }, { "isVip": true }, { "isVip": true },] }
+        var result = template(data);
+
+
+        document.getElementById("vip-server-list-root-soon").innerHTML = result;
+
+        data = { "servers": [{ "isVip": true }, { "isVip": true }, { "isVip": true }, { "isVip": true }, { "isVip": true }] }
+        result = template(data);
+        document.getElementById("vip-server-list-root-already").innerHTML = result;
+
+        data = { "servers": [{ "isRegular": true }, { "isRegular": true }, { "isVip": true }, { "isRegular": true }, { "isRegular": true }] }
+        result = template(data);
+        // document.getElementById("server-list-root-soon").innerHTML = result;
+
+
+        var elements = document.getElementsByClassName("server-list-root-soon");
+        for (let i = 0; i < elements.length; i++) {
+            elements[i].innerHTML = result;
+        }
+        // document.getElementById("vip-server-list-root").innerHTML = result;
+        // var elements = document.getElementsByClassName("vip-star");
+        // console.log(elements.length)
+        // elements[elements.length - 1].classList.add("rounded-bottom");
+    </script>
+
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
+
+
+
+<!-- <div class="row border-bottom" style="align-items: stretch; text-align: center;">
+                            <div class="col col-1" style="background-color: #ff9d2f; padding: 0;">
+                                <div
+                                    style="display: flex; align-items: center; height: 100%; width: 100%;text-align: center; justify-content: center; color: white;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-star" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                                    </svg>
+                                </div>
+
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col">
+                                        Scryde
+                                    </div>
+                                    <div class="col">
+                                        x100
+                                    </div>
+                                    <div class="col">
+                                        20.02.2021
+                                    </div>
+                                    <div class="col col-12" style="font-size: 8px; background-color: antiquewhite;">
+                                        <div class="row">
+                                            <div class="col">
+                                                XP: 100
+                                            </div>
+                                            <div class="col">
+                                                SP: 100
+                                            </div>
+                                            <div class="col">
+                                                Drop: 100
+                                            </div>
+                                            <div class="col">
+                                                Adena: 100
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>                        -->
