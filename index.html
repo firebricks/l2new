@@ -21,8 +21,15 @@
             position: relative;
             height: 400px;
             width: 100%;
-            background-image: linear-gradient(#ff9d2f, #ff6126);
             clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0% 100%);
+        }
+
+        .header-banner {
+            background-image: url(./1.jpg);
+        }
+
+        .header-empty {
+            background-image: linear-gradient(#ff9d2f, #ff6126);
         }
 
         footer {
@@ -49,6 +56,11 @@
             font-size: 20px;
         }
 
+        .l2new-navbar {
+            background-color: #ff9d2f;
+            color: white;
+        }
+
         .list-group-new li {
             border-top: none;
             border-bottom: none;
@@ -62,14 +74,15 @@
             align-items: center;
         }
 
-        .regular-text{
+        .regular-text {
             font-size: 20px;
         }
 
         .splitter {
             border-left: 1px solid;
         }
-        .navbar-brand{
+
+        .navbar-brand {
             color: white !important;
         }
 
@@ -82,17 +95,16 @@
             /* background-color: #D9AFD9;
             background-image: linear-gradient(90deg, #8BC6EC 0%, #9599E2 100%); */
         }
-
     </style>
 </head>
 
 <body>
     <!-- 0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw) -->
-    <nav class="navbar navbar-light" style="background-color: #ff9d2f; color: white;">
-        <div class="container-fluid justify-content-between" >
-            
-            <div>
+    <nav class="navbar navbar-light l2new-navbar">
+        <div class="container-fluid justify-content-between">
 
+            <div>
+                <button type="button" class="btn" id="test-btn">CLICK FOR TEST</button>
             </div>
 
             <div class="">
@@ -104,12 +116,12 @@
 
             <div>
                 <a class="navbar-brand" href="#">Sign In</a>
-                    <a class="navbar-brand" href="#">Sign Up</a>
+                <a class="navbar-brand" href="#">Sign Up</a>
             </div>
         </div>
     </nav>
 
-    <header>
+    <header class="header-empty">
 
     </header>
 
@@ -249,7 +261,9 @@
 
         <footer>
             <div class="text-center" style="padding-top: 10vw; color: white;">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni maxime laudantium veritatis reprehenderit aliquid maiores qui libero corporis? A odio consequatur perspiciatis porro. Hic laboriosam facere, officia maiores vitae aspernatur.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni maxime laudantium veritatis
+                    reprehenderit aliquid maiores qui libero corporis? A odio consequatur perspiciatis porro. Hic
+                    laboriosam facere, officia maiores vitae aspernatur.</p>
             </div>
         </footer>
     </main>
@@ -356,6 +370,20 @@
         for (let i = 0; i < elements.length; i++) {
             elements[i].innerHTML = result;
         }
+
+
+        document.getElementById("test-btn").addEventListener("click", (event) => {
+            console.log('aaa')
+            const element = document.getElementsByTagName("header")[0];
+            console.log(element)
+            if (element.classList.contains("header-empty")) {
+                element.classList.remove("header-empty");
+                element.classList.add("header-banner");
+            } else {
+                element.classList.remove("header-banner");
+                element.classList.add("header-empty");
+            }
+        });
         // document.getElementById("vip-server-list-root").innerHTML = result;
         // var elements = document.getElementsByClassName("vip-star");
         // console.log(elements.length)
