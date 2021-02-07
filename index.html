@@ -19,7 +19,7 @@
     <style>
         header {
             position: relative;
-            height: 200px;
+            height: 400px;
             width: 100%;
             background-image: linear-gradient(#ff9d2f, #ff6126);
             clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0% 100%);
@@ -27,7 +27,7 @@
 
         footer {
             /* position: static; */
-            height: 200px;
+            height: 300px;
             width: 100%;
             bottom: 0;
             background-image: linear-gradient(#ff9d2f, #ff6126);
@@ -36,7 +36,7 @@
 
 
         main {
-            height: 500px;
+            min-height: 500px;
             width: 100%;
             margin-top: -5vw;
             z-index: 100;
@@ -46,6 +46,7 @@
         body {
             background-color: #fcfcfc;
             font-family: 'Google Sans', sans-serif;
+            font-size: 20px;
         }
 
         .list-group-new li {
@@ -61,6 +62,10 @@
             align-items: center;
         }
 
+        .regular-text{
+            font-size: 20px;
+        }
+
         .splitter {
             border-left: 1px solid;
         }
@@ -73,7 +78,7 @@
         }
 
         .notVip {
-            font-size: 8px;
+            font-size: 12px;
             /* background-color: #D9AFD9;
             background-image: linear-gradient(90deg, #8BC6EC 0%, #9599E2 100%); */
         }
@@ -138,7 +143,7 @@
         </section>
 
         <section>
-            <div class="container-sm mt-5">
+            <div class="container-md mt-5">
                 <div class="row mb-5">
                     <!-- left col -->
                     <div class="col me-3">
@@ -295,17 +300,17 @@
             "<div class=\"col\">" +
             "{{/if}}" +
             "                                <div class=\"row\">" +
-            "                                    <div class=\"col\">" +
+            "                                    <div class=\"col regular-text\">" +
             "                                        Scryde" +
             "                                    </div>" +
-            "                                    <div class=\"col\">" +
+            "                                    <div class=\"col regular-text\">" +
             "                                        x100" +
             "                                    </div>" +
-            "                                    <div class=\"col\">" +
+            "                                    <div class=\"col regular-text\">" +
             "                                        20.02.2021" +
             "                                    </div>" +
             "{{#if isVip}}" +
-            "                                    <div class=\"col col-12\" style=\"font-size: 8px; background-color: antiquewhite;\">" +
+            "                                    <div class=\"col col-12\" style=\"font-size: 12px; background-color: antiquewhite;\">" +
             "{{else}}" +
             " <div class=\"col col-12 notVip\">" +
             "{{/if}}" +
